@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Answer the following questions:</h1>
+        <form action="/questions" method="POST">
+            <label>Do you often trust your intuition?</label>
+            <input type="radio" name="q1" value="yes"> Yes
+            <input type="radio" name="q1" value="no"> No <br>
+
+            <label>Do you prefer logical thinking over emotions?</label>
+            <input type="radio" name="q2" value="yes"> Yes
+            <input type="radio" name="q2" value="no"> No <br>
+
+            <label>Do you make decisions quickly?</label>
+            <input type="radio" name="q3" value="yes"> Yes
+            <input type="radio" name="q3" value="no"> No <br>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
