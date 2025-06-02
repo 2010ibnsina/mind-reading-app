@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Who is the person you are thinking about right now?</h1>
+        <form method="POST" action="{{ url_for('funny') }}">
+            <button type="submit" class="btn">Find Answer</button>
+        </form>
+    </div>
+</body>
+</html>
