@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mind Reading</title>
+    <title>Mind Reading App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Mind Reading App</h1>
-        <p>Click below to start answering the questions!</p>
-        <a href="/questions" class="btn">Start</a>
+        <h1>Who is the person you're thinking of right now?</h1>
+        <button onclick="document.getElementById('answer').style.display='block'">Find</button>
+        <p id="answer" style="display:none;">Me 😁</p>
+        <br>
+        <a href="{{ url_for('questions') }}"><button>Start Psychological Test</button></a>
     </div>
 </body>
 </html>
